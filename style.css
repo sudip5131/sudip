@@ -11,7 +11,81 @@ body {
   color: #191919;
   letter-spacing: -1px;
 }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: red;
+}
 
+.brand-title {
+  padding: 55px 125px 25px 105px;
+}
+
+.navbar-links ul {
+  width: 100%;
+  margin: 0em;
+  padding: 30px 100px;
+  display: flex;
+}
+.navbar-links li a {
+  color: black;
+  padding: 40px;
+  display: block;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 3.75rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  padding: 1px;
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 13px;
+}
+
+@media (max-width: 900px) {
+  .toggle-button {
+    display: flex;
+  }
+  .brand-title {
+    padding: 35px 125px 5px 35px;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links ul {
+    flex-direction: column;
+
+    width: 100%;
+    background-color: rgb(250, 246, 240);
+  }
+  .navbar-links li {
+    text-align: center;
+    margin: 2px;
+  }
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+}
 body a {
   text-decoration: none;
   color: #191919;
@@ -120,7 +194,7 @@ body a:hover {
 
 .content-1530 {
   max-width: 1530px;
-  width: 90%;
+  width: 100%;
 }
 
 .content-1370 img,
@@ -189,10 +263,10 @@ ul.slides li img {
 
 .page-desc {
   padding-top: 80px;
-  width: 925px;
+  width: 100%;
   float: right;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 40px;
 }
 
 /* SINGLE POST */
@@ -972,6 +1046,13 @@ li.left-footer-content.mobile {
   .header-holder {
     padding-top: 55px;
     padding-bottom: 55px;
+  }
+  .page-desc {
+    padding-top: 80px;
+    width: 100%;
+    float: right;
+    font-size: 16px;
+    line-height: 25px;
   }
 
   .content-1330 {
