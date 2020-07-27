@@ -51,6 +51,8 @@
 .margin-0 img {
   margin: 0 !important;
   line-height: 0;
+
+  height: 90vh;
 }
 .top-0 {
   margin-top: 0 !important;

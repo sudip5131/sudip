@@ -22,9 +22,7 @@ body {
 .brand-title {
   padding: 55px 125px 25px 105px;
 }
-.navbar {
-  border-bottom: 5px solid #e2e0e0;
-}
+
 .navbar-links ul {
   margin: 0em;
   display: flex;
